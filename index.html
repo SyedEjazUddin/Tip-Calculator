@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            background-image: url(2.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            
+        }
+        .container{
+            height: 410px;  
+            width: 350px;      
+            background: transparent;
+            backdrop-filter: blur(3px); /* Blurs the background */
+            -webkit-backdrop-filter: blur(6px); /* Safari support */
+            box-shadow:0px 8px 15px rgba(14, 13, 13, 0.3);
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            right: 660px;
+        }
+        #first{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: large;
+            color: aliceblue;
+        }
+
+        #bill{
+            background-color: #fefae0;
+            border: none;
+            outline: none;
+            border-radius: 30px;
+            padding: 15px;
+            margin: 20px;
+            margin-top: 60px;
+        }
+
+        #second{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: large;
+            color: aliceblue;
+        }
+        #peoples{
+            background-color: #fefae0;
+            border: none;
+            outline: none;
+            border-radius: 30px;
+            padding: 15px;
+            margin: 13px;
+        }
+        
+        #third{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: large;
+            color: aliceblue;
+        }
+        #tips{
+            background-color: #fefae0;
+            border: none;
+            outline: none;
+            border-radius: 30px;
+            padding: 15px;
+            margin: 14px;
+        }
+        h1{
+            margin: 0;
+            padding: 0;
+            position: relative;
+            top: 17px;
+            color: white;
+           
+        }
+        #cal{
+            border: none;
+            outline: none;
+            color: white;
+            background-color: #283618;
+            border-radius: 30px;
+            padding: 10px;
+            margin-top: 20px;
+            width: 140px;
+        }
+        #reset{
+            border: none;
+            outline: none;
+            color: white;
+            background-color: #283618;
+            border-radius: 30px;
+            padding: 10px;
+            margin-top: 20px;
+            width: 140px;
+            margin-left: 20px;
+        }
+        #reset:hover{
+            background-color: #606c38;
+            cursor: pointer;
+        }
+        #cal:hover{
+            background-color: #606c38;
+            cursor: pointer;
+        }
+        p{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+        }
+      
+        .side{
+
+            background: transparent;
+            backdrop-filter: blur(3px); /* Blurs the background */
+            -webkit-backdrop-filter: blur(6px); /* Safari support */
+            box-shadow:0px 8px 15px rgba(14, 13, 13, 0.3);
+            background: rgba(0, 0, 0, 0.5);
+            height: 410px;  
+            width: 350px;      
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            left: 100px;
+            margin: 0;
+            padding: 0;
+        }
+     
+        h3{
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            position: relative;
+            top: 50px; 
+        }
+   
+        #firste{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: large;
+            color: aliceblue;
+            position: relative;
+            top: 50px;
+            right: 40px;
+        }
+        #seconde{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: large;
+            color: aliceblue;
+            position: relative;
+            top: 80px;
+            right: 100px;
+        }
+        #thirde{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: large;
+            color: aliceblue;
+            position: relative;
+            top: 110px;
+            right: 165px;
+        }
+        #thirden{
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: large;
+            color: aliceblue;
+            position: absolute;
+            top: 150px;
+        }
+        #seconden{
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: large;
+            color: aliceblue;
+            position: absolute;
+            top: 115px;
+           
+        }
+        #firsten{
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: large;
+            color: aliceblue;
+           position: absolute;
+           bottom: 300px;
+        }
+        p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            position: relative;
+            top: 160px;
+            left: 120px;
+        }
+
+        h4{
+            position: relative;
+            top: 200px;
+            right: 50px;
+            color: white;
+        }
+        img{
+            height: 90px;
+            width: 90px;
+            border-radius: 20px;
+           
+        }
+        /* Initial state for the logo */
+        img {
+            width: 100px;  /* Adjust as per your image size */
+            height: auto;
+            transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; 
+            position: relative;
+            right: 260px;
+            bottom: 252px;
+        }
+
+        /* Hover effect */
+        img:hover {
+            transform: rotate(360deg);  /* Full 360-degree rotation */
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);  /* Glowing effect */
+        }
+
+        /* Initial state for the h1 */
+        h1 {
+            color: white;  /* Choose the base color */
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(0, 255, 255, 0.8);
+            transition: text-shadow 0.5s ease-in-out;  /* Smooth transition */
+        }
+
+        /* Glow effect on hover */
+        h1:hover {
+            text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(0, 255, 255, 1), 0 0 40px rgba(0, 255, 255, 1);
+        }
+
+       
+
+    </style>
+ 
+
+</head>
+<body>
+    <img src="ef.png" alt="ejaz logo">
+    <div class="side">
+        <h1 id="up" >Basic Information</h1>
+        <label id="firste" for="bills"></label>
+        <label id="seconde" for="second"></label>
+        <label id="thirde" for="bills"></label>
+
+        <label id="firsten" for="bills"></label>
+        <label id="seconden" for="second"></label>
+        <label id="thirden" for="bills"></label>
+
+        <h3 id="kl">. The bill fiels indicates, how much your cost is in the droller</h3>
+        <h3 id="kj">. The tip field indicates, the tip percentage you want to give</h3>
+        <h3 id="km">. The number of person field indicates, how many of want to give tip.</h3>
+        <h4></h4>
+        <p></p>
+    </div>
+    
+    <div class="container">
+        <h1>Tip Calculator</h1>
+    <label id="first" for="bills">Bills($)</label>
+    <input id="bill" type="number" placeholder="your Bill" >
+
+    <label id="second" for="second">Peoples</label>
+    <input id="peoples" type="number" placeholder="your Peoples" >
+
+
+    <label id="third" for="bills">Tips(%)</label>
+    <input id="tips" type="number" placeholder="your Tips" >
+    <button id="reset" >Reset</button>
+
+    <button id="cal" onclick="tIp()">Calculate</button>
+    
+    </div>
+    <script src="fu.js" charset="UTF-8"></script>
+</body>
+</html>
